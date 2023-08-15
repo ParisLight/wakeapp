@@ -1,0 +1,59 @@
+.profile {
+  padding-top: 40px;
+  background-color: @gray-dark;
+  padding-bottom: 150px;
+
+  .profile__person {
+    margin-bottom: 43px;
+  }
+
+  .profile__title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  .profile__records {
+    .profile__record {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 7px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+      &:not(:first-child) {
+        margin-top: 6px;
+      }
+
+      .profile__time {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.04em;
+      }
+
+      .profile__day {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: @orange;
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: -10px;
+          top: 50%;
+          transform: translateY(-50%);
+          background-color: @orange;
+          height: 4px;
+          width: 4px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

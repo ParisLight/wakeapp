@@ -1,0 +1,25 @@
+.date__filter {
+  width: 40px;
+  background-color: #323232;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  span {
+    width: 22px;
+    height: 5px;
+    display: inline-block;
+    display: block;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  &.is-active{
+    border: 1px @orange solid;
+    span:nth-child(2){  
+      background-color: @orange;
+    }
+  }
+}

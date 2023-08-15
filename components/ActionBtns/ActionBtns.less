@@ -1,0 +1,43 @@
+.overlay{
+    position: fixed;
+    z-index: 4;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.action-btns{
+    // margin-top: 20px;
+    position: absolute;
+    width: calc(100% - 50px);
+    margin: 0 auto;
+    bottom: 50px;
+    right: 0;
+    left: 0;
+    .action-btns__top{
+        border-radius: 14px;
+        overflow: hidden;
+    }
+
+    .action-btns__btn{
+        background-color: @gray2;
+        padding: 15px;
+        // max-width: 360px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .action-btns__text{
+        text-align: center;
+        color: @orange;
+    }
+
+    .action-btns__close{
+        border-radius: 14px;
+        margin-top: 8px;
+        .action-btns__text{
+            color: @w;
+        }
+    }
+    [data-delete]{
+        border-top: 1px solid @gray;
+    }
+}

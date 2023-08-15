@@ -1,0 +1,87 @@
+@import "reset.less";
+@import "font.less";
+@import "function.less";
+@import "color.less";
+@import "animation.less";
+@import "@/components/UI/MyButton/MyButton.less";
+@import "@/components/UI/MyInput/MyInput.less";
+@import "@/components/Header/Header.less";
+@import "@/components/Menu/Menu.less";
+@import "@/components/Person/Person.less";
+@import "@/components/ListTimes/ListTimes.less";
+@import "@/components/SkatingItem/SkatingItem.less";
+@import "@/components/ServiceItem/ServiceItem.less";
+@import "@/components/ActionBtns/ActionBtns.less";
+@import "@/components/Sign/Sign.less";
+@import "@/components/Registration/Registration.less";
+@import "@/components/QueuePerson/QueuePerson.less";
+@import "@/components/ListProfileItems/ListProfileItems.less";
+@import "@/components/ServicesSkatings/ServicesSkatings.less";
+@import "@/components/UI/FilterGrid/FilterGrid.less";
+@import "@/components/UI/FilterRow/FilterRow.less";
+@import "@/components/UI/CustomSelect/CustomSelect.less";
+
+@import "@/pages/Auth/Auth.less";
+@import "@/pages/Servic/Servic.less";
+@import "@/pages/Profile/Profile.less";
+@import "@/pages/Date/Date.less";
+@import "@/pages/Confirmation/Confirmation.less";
+@import "@/pages/Queue/Queue.less";
+
+@import "@/components/Popup/Popup.less";
+html,
+body {
+  font-family: "Rubik";
+  color: #fff;
+  height: 100%;
+  background-color: @gray-dark;
+}
+#__nuxt{
+  height: 100%;
+}
+div,
+a {
+  outline: none;
+  text-decoration: none;
+  color: @w;
+}
+h1,
+h2,
+h3 {
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+}
+.content{
+  height: 100%
+}
+.content-media(@cols,@first) {
+  .grid-calc(9);
+  .left-pagin {
+    grid-column: @first~ "span";
+  }
+  .content {
+    .grid-calc(@cols - @first);
+  }
+}
+.contain-media(@cols,@first,@media) when (default()) {
+  @media @media {
+    .content-media(@cols,@first);
+  }
+}
+.contain-media(@cols,@first,@media) when (@media = "null") {
+  .content-media(@cols,@first);
+}
+
+.container {
+  max-width: 100%;
+  width: calc(100% - 50px);
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@time: 0.3s;
+@import "index.less";
+@import "layouts.less";

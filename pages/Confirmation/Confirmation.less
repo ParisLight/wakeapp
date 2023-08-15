@@ -1,0 +1,159 @@
+.confirmation {
+  padding-top: 48px;
+  height: 90vh;
+  .confirmation__title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: @w;
+    position: relative;
+    display: inline;
+    padding-bottom: 14px;
+
+    &::after {
+      content: "";
+      background-color: @orange;
+      height: 4px;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  .confirmation__rows {
+    margin-top: 32px;
+  }
+  .confirmation__row {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:first-child) {
+      margin-top: 16px;
+    }
+
+    .confirmation__subtitle {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: @orange;
+    }
+
+    .confirmation__info {
+      margin-top: 4px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+  }
+
+  .confirmation__descriptions {
+    position: relative;
+    max-width: 233px;
+    padding-top: 8px;
+    margin-top: 24px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      background-color: @w;
+      height: 1px;
+      width: 100%;
+    }
+  }
+  .confirmation__description {
+    position: relative;
+    padding-left: 12px;
+
+    &:not(:first-child) {
+      margin-top: 8px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 7px;
+      background-color: @w;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+    }
+    .confirmation__text {
+      font-weight: 300;
+      font-size: 10px;
+      line-height: 12px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+  }
+  .confirmation__bottom {
+    margin-top: auto;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+    .confirmation-prev {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      text-transform: uppercase;
+    }
+
+  .confirmation__img-wrapper {
+    margin-top: 32px;
+    .confirmation__img {
+      width: 100%;
+    }
+  }
+
+  .confirmation__booked {
+    max-width: 237px;
+    margin: 0 auto;
+    margin-top: 40px;
+    position: relative;
+    .confirmation__booked-text {
+      display: flex;
+      flex-direction: column;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: 0.04em;
+    }
+    .confirmation__booked-smile {
+      width: 21px;
+      height: 21px;
+      position: absolute;
+      right: 10px;
+      bottom: 0;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .booked {
+    position: static;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+
+  .confirmation__queue {
+    text-align: center;
+    .confirmation__queue-text {
+      color: @orange;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      text-transform: uppercase;
+    }
+  }
+}
+.success-confirm{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}

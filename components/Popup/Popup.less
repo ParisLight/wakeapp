@@ -1,0 +1,103 @@
+.popup-background {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  inset: 0;
+  position: fixed;
+  z-index: 3;
+  align-items: center;
+  justify-content: center;
+}
+.popup {
+  background-color: @gray;
+  padding: 32px 24px;
+  border-radius: 16px 16px 0 0 ;
+  // width: calc(100% - 50px);
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 4;
+  .popup-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+  }
+  .popup__inputs {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    .popup-input {
+      background: transparent;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      padding-bottom: 8px;
+      color: @w;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+
+      &:not(:first-child) {
+        margin-top: 32px;
+      }
+      &::placeholder {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .popup__checkbox {
+    margin-top: 32px;
+    position: relative;
+    .popup__label {
+      .popup__chck {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        width: 0;
+        height: 0;
+
+        &:checked + .chck__text::before {
+          background-image: url(/img/chck.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+
+      .chck__text {
+        position: relative;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        display: inline-block;
+        padding-left: 25px;
+        &::before {
+          content: "";
+          background-color: @orange;
+          border-radius: 2px;
+          position: absolute;
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          left: 0;
+          top: 0;
+        }
+      }
+    }
+  }
+  .popup__btn {
+    margin-top: 48px;
+    margin-bottom: 0;
+    position: static;
+    inset: 0;
+    width: 100%;
+    transform: translateX(0);
+  }
+}

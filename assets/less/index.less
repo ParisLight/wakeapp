@@ -1,0 +1,93 @@
+.promo {
+  background: url(/img/promo-background.jpg) no-repeat;
+  background-position: center;
+  height: 100%;
+}
+
+.sign {
+  display: flex;
+  cursor: pointer;
+  .sign__text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  .sign__arr {
+    margin-left: 17px;
+  }
+}
+
+.promo__inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .promo__title {
+    padding-top: 36px;
+  }
+
+  .promo__description {
+    margin-top: auto;
+    .orange-text {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 38px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+
+      color: #ea7d1d;
+    }
+  }
+
+  .promo__sport {
+    margin-top: 8px;
+    margin-bottom: 44px;
+    position: relative;
+
+    .promo__text {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.04em;
+      position: relative;
+      color: #ffffff;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        background-color: @orange;
+        width: 76px;
+        height: 4px;
+        margin-top: 8px;
+      }
+    }
+  }
+
+  .promo__active {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 24px;
+
+    .promo__btn {
+      max-width: 188px;
+      width: 100%;
+    }
+  }
+}
+.title {
+  font-weight: 500;
+  font-size: 50.4px;
+  line-height: 57px;
+  /* or 112% */
+
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}

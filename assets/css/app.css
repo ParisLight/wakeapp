@@ -1,0 +1,225 @@
+@import "../css/font.css";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+u,
+center,
+dl,
+dt,
+dd,
+fieldset,
+form,
+label,
+legend,
+caption,
+tbody,
+tfoot,
+thead,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+b {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  color: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+/* ol,
+ul {
+  list-style: none;
+} */
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+b,
+strong {
+  font-weight: bold;
+}
+i,
+em {
+  font-style: italic;
+}
+u {
+  text-decoration: underline;
+}
+s {
+  text-decoration: line-through;
+}
+sup {
+  vertical-align: super;
+  font-size: 70%;
+}
+sub {
+  vertical-align: sub;
+  font-size: 70%;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Rubik";
+  src: local("Rubik-Black"),
+    url("../fonts/Rubik-Black/Rubik-Black.eot") format("eot"),
+    url("../fonts/Rubik-Black/Rubik-Black.ttf") format("ttf"),
+    url("../fonts/Rubik-Black/Rubik-Black.woff") format("woff"),
+    url("../fonts/Rubik-Black/Rubik-Black.woff2") format("woff2"),
+    url("../fonts/Rubik-Black/Rubik-Black.svg") format("svg");
+  font-display: swap;
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rubik";
+  src: local("Rubik-Bold"),
+    url("../fonts/Rubik-Bold/Rubik-Bold.eot") format("eot"),
+    url("../fonts/Rubik-Bold/Rubik-Bold.ttf") format("ttf"),
+    url("../fonts/Rubik-Bold/Rubik-Bold.woff") format("woff"),
+    url("../fonts/Rubik-Bold/Rubik-Bold.woff2") format("woff2"),
+    url("../fonts/Rubik-Bold/Rubik-Bold.svg") format("svg");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rubik";
+  src: local("Rubik-Medium"),
+    url("../fonts/Rubik-Medium/Rubik-Medium.eot") format("eot"),
+    url("../fonts/Rubik-Medium/Rubik-Medium.ttf") format("ttf"),
+    url("../fonts/Rubik-Medium/Rubik-Medium.woff") format("woff"),
+    url("../fonts/Rubik-Medium/Rubik-Medium.woff2") format("woff2"),
+    url("../fonts/Rubik-Medium/Rubik-Medium.svg") format("svg");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rubik";
+  src: local("Rubik-Regular"),
+    url("../fonts/Rubik-Regular/Rubik-Regular.eot") format("eot"),
+    url("../fonts/Rubik-Regular/Rubik-Regular.ttf") format("ttf"),
+    url("../fonts/Rubik-Regular/Rubik-Regular.woff") format("woff"),
+    url("../fonts/Rubik-Regular/Rubik-Regular.woff2") format("woff2"),
+    url("../fonts/Rubik-Regular/Rubik-Regular.svg") format("svg");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rubik";
+  src: local("Rubik-Light"),
+    url("../fonts/Rubik-Light/Rubik-Light.eot") format("eot"),
+    url("../fonts/Rubik-Light/Rubik-Light.ttf") format("ttf"),
+    url("../fonts/Rubik-Light/Rubik-Light.woff") format("woff"),
+    url("../fonts/Rubik-Light/Rubik-Light.woff2") format("woff2"),
+    url("../fonts/Rubik-Light/Rubik-Light.svg") format("svg");
+  font-display: swap;
+  font-weight: 300;
+  font-style: normal;
+}
+html,
+body {
+  background: #ebf0f7;
+  font-family: "Rubik";
+}
+div,
+a {
+  outline: none;
+}
+h1,
+h2,
+h3 {
+  font-weight: normal;
+}
+.container {
+  max-width: 100%;
+  width: calc(100% - 50px);
+  margin: 0 auto;
+}
+.promo {
+  height: 100vh;
+  width: 100%;
+  background: url(/assets/images/promo-background.jpg) no-repeat;
+}

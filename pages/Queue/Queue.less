@@ -1,0 +1,85 @@
+.queue {
+  font-family: "DS Eraser Cyr";
+  padding-bottom: 150px;
+  .queue__sports {
+    border-bottom: 1px dashed @gray;
+    .queue__sports-inner {
+      padding: 22px 0;
+      display: flex;
+      // justify-content: space-between;
+      column-gap: 60px;
+      align-items: center;
+    }
+
+    .queue__sport {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 13px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      transition: color @time ease-in-out;
+
+      &-active {
+        color: @orange;
+        font-size: 20px;
+        line-height: 16px;
+        position: relative;
+
+        &::before {
+          content: "-";
+          position: absolute;
+          left: -20px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        &::after {
+          content: "-";
+          position: absolute;
+          right: -20px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+  .queue__out {
+    margin-top: 37px;
+    text-align: center;
+    .queue__t-wrapper {
+      display: inline-block;
+      position: relative;
+    }
+
+    .queue__line {
+      position: absolute;
+      top: -25px;
+      left: 0px;
+    }
+
+    .queue__line-2 {
+      position: absolute;
+      bottom: -13px;
+    }
+
+    .queue__out-text {
+      position: relative;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 16px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .queue__out-orange {
+      color: @orange;
+    }
+  }
+
+  .queue__list {
+    margin-top: 40px; //??????????
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    position: relative;
+  }
+}

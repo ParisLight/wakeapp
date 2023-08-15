@@ -1,0 +1,75 @@
+.list-times {
+  .times-day {
+    color: @w;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 120%;
+      height: 3px;
+      width: 253px;
+      background-color: @orange;
+    }
+  }
+  .list-times__inner {
+    // width: 750px;
+    display: flex;
+  }
+  .list-col{
+    display: flex;
+    flex-direction: column;
+  }
+  .list-times__time {
+    margin-top: 16px;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .list-time__item {
+      transition: @time ease-in-out;
+      text-align: center;
+      transition-property: border, background-color, color;
+      display: inline-block;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+      color: @w;
+      padding: 8px 15px;
+      max-width: 72px;
+      width: 100%;
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      border-radius: 60px;
+      margin: 2px 4px;
+    }
+
+    .item-active {
+      background-color: @orange;
+      border: 1px solid @orange;
+    }
+
+    .item-booked{
+      pointer-events: none;
+      opacity: 0.2;
+    }
+
+    .admin-view{
+      border: 1px solid @orange;
+      color: @orange;
+      opacity: 0.6;
+      pointer-events: all;
+    }
+  }
+}
+
+.swiper-slide {
+  width: 800px !important;
+}
+

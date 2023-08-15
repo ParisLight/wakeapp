@@ -1,0 +1,121 @@
+.settings__btn{
+  border-radius: 47px;
+  background-color: @gray;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  .settings__img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.services__product-front {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  max-width: 152px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.product-price{
+  position: relative;
+  &::before{
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: @w;
+    position: absolute;
+    top: -8px;
+    left: 0;
+  }
+}
+
+.services__sub-title {
+  margin-top: 33px;
+}
+
+.services__products {
+  margin-top: 25px;
+}
+
+.services__product {
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+  position: relative;
+  height: 214px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  padding-top: 47px;
+  padding-right: 22px;
+  padding-bottom: 12px;
+  padding-left: 22px;
+
+  [data-dash] {
+    top: 57px;
+  }
+  &:not(:first-child) {
+    margin-top: 16px;
+  }
+}
+
+.services__product-days {
+  display: flex;
+  flex-direction: column;
+
+  .product-days-text {
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.04em;
+  }
+
+  .product-days-price {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+}
+
+.services__rect-wrapper {
+  position: absolute;
+  right: 0;
+  top: 0;
+  mix-blend-mode: multiply;
+}
+
+.product__icon-wrapper {
+  position: absolute;
+  right: 0;
+  top: 48px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services__product-name {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  .product__sub-title {
+    white-space: pre;
+  }
+}

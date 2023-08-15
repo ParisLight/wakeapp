@@ -1,0 +1,29 @@
+.date__grid{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: @gray2;
+  border-radius: 8px;
+  transition: all .3s ease-in-out;
+  &.is-active{
+    border: 1px solid @orange;
+    .rect-active{
+      background-color: @orange;
+    }
+  }
+}
+.date__rect{
+  width: 5px;
+  height: 5px;
+  background-color: @w;
+  transition: background-color .3s ease-in-out;
+}
+.grid-inner{
+  max-width: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+}

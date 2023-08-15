@@ -1,0 +1,44 @@
+@import "../css/font.css";
+@font-face {
+  font-family: "Rubik";
+  src: local("Rubik-Black"), url("../fonts/Rubik-Black/Rubik-Black.eot") format("eot"), url("../fonts/Rubik-Black/Rubik-Black.ttf") format("ttf"), url("../fonts/Rubik-Black/Rubik-Black.woff") format("woff"), url("../fonts/Rubik-Black/Rubik-Black.woff2") format("woff2"), url("../fonts/Rubik-Black/Rubik-Black.svg") format("svg");
+  font-display: swap;
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rubik";
+  src: local("Rubik-Bold"), url("../fonts/Rubik-Bold/Rubik-Bold.eot") format("eot"), url("../fonts/Rubik-Bold/Rubik-Bold.ttf") format("ttf"), url("../fonts/Rubik-Bold/Rubik-Bold.woff") format("woff"), url("../fonts/Rubik-Bold/Rubik-Bold.woff2") format("woff2"), url("../fonts/Rubik-Bold/Rubik-Bold.svg") format("svg");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rubik";
+  src: local("Rubik-Medium"), url("../fonts/Rubik-Medium/Rubik-Medium.eot") format("eot"), url("../fonts/Rubik-Medium/Rubik-Medium.ttf") format("ttf"), url("../fonts/Rubik-Medium/Rubik-Medium.woff") format("woff"), url("../fonts/Rubik-Medium/Rubik-Medium.woff2") format("woff2"), url("../fonts/Rubik-Medium/Rubik-Medium.svg") format("svg");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rubik";
+  src: local("Rubik-Regular"), url("../fonts/Rubik-Regular/Rubik-Regular.eot") format("eot"), url("../fonts/Rubik-Regular/Rubik-Regular.ttf") format("ttf"), url("../fonts/Rubik-Regular/Rubik-Regular.woff") format("woff"), url("../fonts/Rubik-Regular/Rubik-Regular.woff2") format("woff2"), url("../fonts/Rubik-Regular/Rubik-Regular.svg") format("svg");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rubik";
+  src: local("Rubik-Light"), url("../fonts/Rubik-Light/Rubik-Light.eot") format("eot"), url("../fonts/Rubik-Light/Rubik-Light.ttf") format("ttf"), url("../fonts/Rubik-Light/Rubik-Light.woff") format("woff"), url("../fonts/Rubik-Light/Rubik-Light.woff2") format("woff2"), url("../fonts/Rubik-Light/Rubik-Light.svg") format("svg");
+  font-display: swap;
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DS Eraser Cyr";
+  src: url("../fonts/DS-Eraser-Cyr/DSEraserCyr.eot");
+  src: local("DS Eraser Cyr"), local("DSEraserCyr"), url("DSEraserCyr.eot?#iefix") format("embedded-opentype"), url("../fonts/DS-Eraser-Cyr/DSEraserCyr.woff") format("woff2"), url("../fonts/DS-Eraser-Cyr/DSEraserCyr.woff") format("woff"), url("../fonts/DS-Eraser-Cyr/DSEraserCyr.ttf") format("truetype"), url("../fonts/DS-Eraser-Cyr/DSEraserCyr.svg#DSEraserCyr") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

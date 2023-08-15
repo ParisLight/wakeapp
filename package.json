@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build && touch tmp/restart.txt",
+    "build-test": "nuxt build && node .output/server/index.mjs",
+    "dev": "cross-env NODE_ENV=development nuxi dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "nuxt": "3.1.0"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "0.4.6",
+    "@vueuse/components": "9.11.1",
+    "@vueuse/core": "9.11.1",
+    "@vueuse/nuxt": "9.11.1",
+    "cookie-parser": "^1.4.6",
+    "cross-env": "7.0.3",
+    "hammerjs": "^2.0.8",
+    "less": "4.1.3",
+    "less-loader": "11.1.0",
+    "pinia": "2.0.29",
+    "socket.io-client": "^4.7.1",
+    "swiper": "^8.4.7",
+    "v-mask": "2.3.0",
+    "vue": "3.2.45",
+    "vue-inputmasked-v3": "^1.3.5",
+    "vue-router": "^4.2.2",
+    "vue3-slide-up-down": "1.2.5"
+  }
+}

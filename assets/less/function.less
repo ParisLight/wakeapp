@@ -1,0 +1,33 @@
+@desk:~ 'only screen and (max-width: 1600px)';
+@note:~ 'only screen and (max-width: 1599px)';
+@tablet:~ 'only screen and (max-width: 1149px)';
+@mob:~ 'only screen and (max-width: 599px)';
+
+.width(@max,@min,@size_max,@size_min) {
+  @media only screen and (max-width: unit(@max,px)) {
+    width: calc(
+      (100vw - unit(@min, px)) / ((@max - @min) / (@size_max - @size_min)) +
+        unit(@size_min, px)
+    );
+  }
+  @media only screen and (max-width: unit(@min,px)) {
+    width: unit(@size_min, px);
+  }
+}
+.grid-calc(@all) {
+  display: grid;
+  grid-column: @all~ "span";
+  grid-template-columns: repeat(@all, 1fr);
+  grid-column-gap: 48px;
+  .all {
+    grid-column: @all~ "span";
+  }
+  // @media @note{
+  // 	grid-column-gap: 8px;
+  // }
+  // & > *{
+  // 	grid-column: @all~'span';
+  // }
+}
+
+@transition: 0.3s ease;
